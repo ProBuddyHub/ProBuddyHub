@@ -67,7 +67,7 @@ body {
 }
 
 .hero {
-    background: url('hero-image.jpg') no-repeat center center/cover;
+    background: url('images/hero-image.jpg') no-repeat center center/cover;
     height: 60vh;
     display: flex;
     align-items: center;
@@ -168,7 +168,6 @@ footer {
 .hero-buttons.fade-in {
     opacity: 1; /* Full opacity after fade-in class */
 }
-
 
 /* Fade-in effect */
 .fade-in {
