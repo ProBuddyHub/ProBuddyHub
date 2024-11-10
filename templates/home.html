@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Integration Hub</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>ProBuddyHub</h2>
+            <nav>
+                <ul>
+                    <li><a href="{{ url_for('home') }}"><i class="fas fa-home"></i> &nbsp; Home</a></li>
+                    <li><a href="{{ url_for('about') }}"><i class="fas fa-info-circle"></i> &nbsp; About us</a></li>
+                    <li><a href="{{ url_for('ai_solutions') }}"><i class="fas fa-cogs"></i> &nbsp; AI Solutions</a></li>
+                    <li><a href="{{ url_for('use_cases') }}"><i class="fas fa-briefcase"></i> &nbsp; Use Cases</a></li>
+                    <li><a href="{{ url_for('learning_center') }}"><i class="fas fa-book"></i> &nbsp; Learning Center</a></li>
+                    <li><a href="{{ url_for('pricing') }}"><i class="fas fa-tags"></i> &nbsp; Pricing</a></li>
+                    <li><a href="{{ url_for('community_hub') }}"><i class="fas fa-comments"></i> &nbsp; Community Hub</a></li>
+                    <li><a href="{{ url_for('support') }}"><i class="fas fa-life-ring"></i> &nbsp; Support</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <section id="home" class="hero">
+                <div class="hero-content">
+                    <h1 id="typing-effect">Transforming Ideas into Reality with AI</h1>
+                    <div class="hero-buttons fade-in">
+                        <button class="cta" onclick="window.location.href='{{ url_for('sign_in') }}'">Get Started Free</button>
+
+                        <button class="cta" onclick="window.location.href='{{ url_for('demo_ai') }}'">See AI in Action</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Hub - ProBuddyHub</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/community-hub.css') }}">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('about') }}">About Us</a></li>
+            <li><a href="{{ url_for('community_hub') }}">Community Hub</a></li>
+            <li><a href="{{ url_for('sign_in') }}">Login</a></li>
+        </ul>
+    </nav>
+
+    <!-- Community Hub Main Section -->
+    <section id="community-hub">
+        <h1>Welcome to the Community Hub</h1>
+
+        <div class="intro">
+            <h2>Engage, Collaborate, and Grow Together</h2>
+            <p>
+                The ProBuddyHub Community Hub is your space to connect with like-minded individuals, share knowledge, participate in discussions, and work together on exciting projects.
+            </p>
+        </div>
+
+        <div class="sections">
+            <!-- Forum Section -->
+            <div class="section" id="forum">
+                <h3>Forum Discussions</h3>
+                <p>Join our forums to discuss topics ranging from AI to software development and more.</p>
+                <button onclick="navigateTo('forum')">Explore Forum</button>
+            </div>
+
+            <!-- Project Collaboration Section -->
+            <div class="section" id="projects">
+                <h3>Project Collaborations</h3>
+                <p>Work on real-world projects, showcase your skills, and learn from others in collaborative environments.</p>
+                <button onclick="navigateTo('projects')">View Projects</button>
+            </div>
+
+            <!-- Events Section -->
+            <div class="section" id="events">
+                <h3>Events & Webinars</h3>
+                <p>Attend events and webinars hosted by industry experts and community leaders.</p>
+                <button onclick="navigateTo('events')">Upcoming Events</button>
+            </div>
+
+            <!-- Mentorship Section -->
+            <div class="section" id="mentorship">
+                <h3>Mentorship Program</h3>
+                <p>Connect with mentors, gain insights, and receive guidance on your learning journey.</p>
+                <button onclick="navigateTo('mentorship')">Find a Mentor</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 ProBuddyHub. All rights reserved.</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/community-hub.js') }}"></script>
+
+</body>
+</html>

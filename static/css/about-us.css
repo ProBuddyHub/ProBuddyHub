@@ -1,0 +1,132 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9fafb;
+    color: #333;
+}
+
+section {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 28px;
+    color: #333;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 18px;
+}
+
+
+#chiefs .chief-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* ID card styling */
+.id-card {
+    display: flex;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    padding: 20px;
+    margin: 10px;
+    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Add transition */
+}
+
+/* Hover effect for highlighting */
+
+.id-card:hover {
+    transform: translateY(-5px); /* Slightly raise the card */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance the shadow for emphasis */
+    background-color: #f4f8fb; /* Slight background color change for emphasis */
+}
+
+/* ID card left (image) */
+.id-card-left {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.id-card-left img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* ID card right (text) */
+.id-card-right {
+    flex: 2;
+    text-align: left;
+}
+
+.id-card-right p {
+    margin: 10px 0;
+}
+
+.id-card-right .see-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.id-card-right .see-more:hover {
+    text-decoration: underline;
+}
+
+/* CEO Section */
+#ceo .id-card {
+    max-width: 700px;
+}
+
+/* Motto, Goals, and Partners section */
+#motto, #goals, #partners {
+    margin-top: 20px;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .id-card {
+        flex-direction: column;
+    }
+
+    .id-card-left {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .id-card-right {
+        text-align: center;
+    }
+}

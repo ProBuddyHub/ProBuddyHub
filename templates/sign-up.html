@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - ProBuddyHub</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/signup.css') }}">
+    <script src="{{ url_for('static', filename='js/signup.js') }}"></script>
+</head>
+<body>
+    <div class="signup-container">
+        <h2>Create Your Own AI Assistance</h2>
+        <div class="account-type-switch">
+            <div id="quantum-buddy" class="account-type selected">Quantum Buddy (Free Version)</div>
+            <div id="elite-buddy" class="account-type">Elite Buddy (Pro Version)</div>
+        </div>
+
+        <!-- Quantum Buddy Form (Free Version) -->
+        <form id="quantum-form" class="signup-form" action="#" method="POST" onsubmit="return validateQuantumForm()">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required placeholder="Enter unique username">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+            <label for="password">Create Password</label>
+            <div class="password-wrapper">
+                <input type="password" id="password" name="password" required placeholder="Enter your password">
+                <span class="eye-icon-1" onclick="togglePasswordVisibility('password')">&#128064;</span>
+            </div>
+
+            <label for="confirm-password">Retype Password</label>
+            <div class="password-wrapper">
+                <input type="password" id="confirm-password" name="confirm-password" required placeholder="Retype your password">
+                <span class="eye-icon-2" onclick="togglePasswordVisibility('confirm-password')">&#128064;</span>
+            </div>
+
+            <label for="captcha">Captcha</label>
+            <input type="text" id="captcha" name="captcha" required placeholder="Enter Captcha">
+
+            <div class="terms">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I agree to the Terms and Conditions</label>
+            </div>
+
+            <button type="submit" class="signup-btn">Sign Up</button>
+        </form>
+
+        <!-- Elite Buddy Form (Pro Version) -->
+        <form id="elite-form" class="signup-form hidden" action="#" method="POST" onsubmit="return validateEliteForm()">
+            <label for="pro-email">Email</label>
+            <input type="email" id="pro-email" name="pro-email" required placeholder="Enter your email">
+
+            <label for="pro-password">Create Password</label>
+            <input type="password" id="pro-password" name="pro-password" required placeholder="Enter your password">
+
+            <label for="pro-confirm-password">Retype Password</label>
+            <input type="password" id="pro-confirm-password" name="pro-confirm-password" required placeholder="Retype your password">
+
+            <label for="account-type">Account Type</label>
+            <select id="account-type" name="account-type" required>
+                <option value="individual">Individual</option>
+                <option value="company">Company</option>
+            </select>
+
+            <div id="company-size" class="hidden">
+                <label for="employee-size">Employee Size</label>
+                <input type="number" id="employee-size" name="employee-size" placeholder="Enter employee count">
+            </div>
+
+            <div class="mail-options">
+                <label for="mail-option">Mail Option <span class="tooltip" title="SSO lets you authenticate multiple users through a single account.">?</span></label>
+                <select id="mail-option" name="mail-option" required>
+                    <option value="send-list">Send us the list</option>
+                    <option value="sso">SSO Type</option>
+                </select>
+            </div>
+
+            <div class="terms">
+                <input type="checkbox" id="pro-terms" name="pro-terms" required>
+                <label for="pro-terms">I agree to the Terms and Conditions</label>
+            </div>
+
+            <button type="submit" class="signup-btn">Sign Up - $29.99/month</button>
+        </form>
+    </div>
+
+
+</body>
+</html>

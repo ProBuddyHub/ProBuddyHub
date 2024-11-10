@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing - ProBuddyHub</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/pricing.css') }}">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('about') }}">About Us</a></li>
+            <li><a href="{{ url_for('learning_center') }}">Learning Center</a></li>
+            <li><a href="{{ url_for('pricing') }}">Pricing</a></li>
+
+        </ul>
+    </nav>
+
+    <!-- Pricing Section -->
+    <section id="pricing">
+        <h1>Choose Your Plan</h1>
+        <p>Select the plan that suits you best and unlock advanced learning resources.</p>
+
+        <!-- Pricing Options -->
+        <div class="pricing-options">
+            <!-- Free Plan -->
+            <div class="pricing-card">
+                <h2>Free</h2>
+                <p>$0 / month</p>
+                <ul>
+                    <li>Access to basic courses</li>
+                    <li>Community support</li>
+                    <li>Access to tutorials</li>
+                </ul>
+                <button>Get Started</button>
+            </div>
+
+            <!-- Pro Plan -->
+            <div class="pricing-card highlighted">
+                <h2>Pro</h2>
+                <p>$19 / month</p>
+                <ul>
+                    <li>Everything in Free</li>
+                    <li>Advanced courses & challenges</li>
+                    <li>Priority support</li>
+                    <li>Access to exclusive webinars</li>
+                </ul>
+                <button>Start Pro</button>
+            </div>
+
+            <!-- Premium Plan -->
+            <div class="pricing-card">
+                <h2>Premium</h2>
+                <p>$49 / month</p>
+                <ul>
+                    <li>Everything in Pro</li>
+                    <li>One-on-one mentorship</li>
+                    <li>Personalized learning paths</li>
+                    <li>Monthly project feedback</li>
+                </ul>
+                <button>Go Premium</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 ProBuddyHub. All rights reserved.</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/pricing.js') }}"></script>
+</body>
+</html>

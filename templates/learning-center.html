@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Center - ProBuddyHub</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/learning-center.css') }}">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('about') }}">About Us</a></li>
+            <li><a href="{{ url_for('ai_solutions') }}">AI Solutions</a></li>
+            <li><a href="{{ url_for('use_cases') }}">Use Cases</a></li>
+            <li><a href="{{ url_for('learning_center') }}">Learning Center</a></li>
+        </ul>
+    </nav>
+
+    <!-- Learning Center Section -->
+    <section id="learning-center">
+        <h1>Welcome to the Learning Center</h1>
+        <p>Explore our courses, tutorials, and challenges designed to empower you with the latest skills in AI and tech.</p>
+
+        <!-- Courses Section -->
+        <div class="learning-section" id="courses">
+            <h2>Courses</h2>
+            <p>Dive deep into structured learning paths across various domains of AI and technology.</p>
+            <div class="cards">
+                <div class="card">
+                    <h3>Introduction to Machine Learning</h3>
+                    <p>Learn the basics of machine learning, algorithms, and data processing techniques.</p>
+                    <button>Learn More</button>
+                </div>
+                <div class="card">
+                    <h3>Deep Learning Essentials</h3>
+                    <p>Understand the fundamentals of neural networks and deep learning architectures.</p>
+                    <button>Learn More</button>
+                </div>
+                <div class="card">
+                    <h3>Data Science for Beginners</h3>
+                    <p>A practical guide to data analysis, visualization, and statistical methods.</p>
+                    <button>Learn More</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tutorials Section -->
+        <div class="learning-section" id="tutorials">
+            <h2>Tutorials</h2>
+            <p>Access step-by-step guides on specific topics to enhance your practical skills.</p>
+            <div class="cards">
+                <div class="card">
+                    <h3>Building a Simple Chatbot</h3>
+                    <p>Create a basic chatbot with Python and machine learning libraries.</p>
+                    <button>View Tutorial</button>
+                </div>
+                <div class="card">
+                    <h3>AI-Powered Image Classification</h3>
+                    <p>Learn how to classify images using deep learning models.</p>
+                    <button>View Tutorial</button>
+                </div>
+                <div class="card">
+                    <h3>Data Cleaning in Python</h3>
+                    <p>Master data preprocessing techniques to prepare datasets for analysis.</p>
+                    <button>View Tutorial</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Challenges Section -->
+        <div class="learning-section" id="challenges">
+            <h2>Challenges</h2>
+            <p>Test your skills with real-world problems and compete with peers to showcase your expertise.</p>
+            <div class="cards">
+                <div class="card">
+                    <h3>Sentiment Analysis Challenge</h3>
+                    <p>Analyze social media posts to identify sentiment and emotional tone.</p>
+                    <button>Start Challenge</button>
+                </div>
+                <div class="card">
+                    <h3>Image Recognition Challenge</h3>
+                    <p>Build a model to recognize objects in images with high accuracy.</p>
+                    <button>Start Challenge</button>
+                </div>
+                <div class="card">
+                    <h3>Text Summarization Task</h3>
+                    <p>Create a tool that summarizes long articles into concise versions.</p>
+                    <button>Start Challenge</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 ProBuddyHub. All rights reserved.</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/learning-center.js') }}"></script>
+</body>
+</html>

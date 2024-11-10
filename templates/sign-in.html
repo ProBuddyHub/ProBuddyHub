@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <!-- Use url_for to reference static files in Flask -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/signin.css') }}">
+</head>
+<body>
+    <div class="signin-container">
+        <h2>Welcome to ProBuddyHub</h2>
+        <p class="intro-text">Sign in to access your personal AI assistant</p>
+
+        <!-- Use url_for to define the action for the form, assuming there's a route to handle it -->
+        <form class="signin-form" action="{{ url_for('sign_in') }}" method="POST">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email">
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required placeholder="Enter your password">
+            
+            <button type="submit" class="signin-btn">Sign In</button>
+        </form>
+
+        <div class="extra-links">
+            <!-- Use url_for to reference the Forgot Password and Sign Up pages -->
+            <a href="{{ url_for('forgot_password') }}" id="forgot-password">Forgot Password?</a>
+            <a href="{{ url_for('sign_up') }}" id="signup-link">Create Account</a>
+        </div>
+    </div>
+
+    <!-- Use url_for to reference the JS file in static folder -->
+    <script src="{{ url_for('static', filename='js/signin.js') }}"></script>
+</body>
+</html>

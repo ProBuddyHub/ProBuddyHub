@@ -1,0 +1,128 @@
+/* Basic styling for the Pricing page */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #4CAF50;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ffeb3b;
+}
+
+/* Pricing Section */
+#pricing {
+    padding: 2rem;
+    text-align: center;
+}
+
+#pricing h1 {
+    color: #4CAF50;
+}
+
+#pricing p {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+.pricing-options {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.pricing-card {
+    background-color: white;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    width: 250px;
+    text-align: center;
+}
+
+.pricing-card.highlighted {
+    border-color: #4CAF50;
+    box-shadow: 0 4px 12px rgba(0, 128, 0, 0.2);
+}
+
+.pricing-card h2 {
+    color: #4CAF50;
+}
+
+.pricing-card p {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.pricing-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.pricing-card ul li {
+    padding: 0.5rem 0;
+    color: #555;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/* Highlight pricing card on hover */
+.hover-highlight {
+    box-shadow: 0 8px 16px rgba(0, 128, 0, 0.3);
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}

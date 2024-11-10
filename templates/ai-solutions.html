@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Solutions - ProBuddyHub</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/ai-solutions.css') }}">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('about') }}">About Us</a></li>
+            <li><a href="{{ url_for('ai_solutions') }}">AI Solutions</a></li>
+            <li><a href="{{ url_for('use_cases') }}">Use Cases</a></li>
+        </ul>
+    </nav>
+
+    <!-- AI Solutions Section -->
+    <section id="ai-solutions">
+        <h1>Our AI Solutions</h1>
+
+        <div class="solution">
+            <h2>AI-Powered Learning</h2>
+            <p>
+                Our platform offers AI-driven learning paths tailored to individual skill levels, optimizing the learning experience based on progress and preferences. Dive deep into machine learning, deep learning, data science, and more with custom recommendations.
+            </p>
+        </div>
+
+        <div class="solution">
+            <h2>AI-Enhanced Analytics</h2>
+            <p>
+                Utilize advanced analytics tools powered by AI to gain insights from complex data, visualize trends, and make data-driven decisions. From predictive analysis to real-time data tracking, our analytics tools empower professionals and businesses alike.
+            </p>
+        </div>
+
+        <div class="solution">
+            <h2>Chatbot Solutions</h2>
+            <p>
+                Develop intelligent chatbots that provide 24/7 support, improve customer engagement, and automate business processes. Our chatbot solutions are powered by natural language processing (NLP) and machine learning for accurate and efficient responses.
+            </p>
+        </div>
+
+        <div class="solution">
+            <h2>Image and Video Processing</h2>
+            <p>
+                Leverage computer vision technology for image recognition, video analysis, object detection, and more. Our tools help automate visual data analysis, benefiting industries such as retail, security, and healthcare.
+            </p>
+        </div>
+
+        <div class="technology">
+            <h2>Our Technology Stack</h2>
+            <ul>
+                <li><strong>Machine Learning Libraries:</strong> TensorFlow, PyTorch, Scikit-learn</li>
+                <li><strong>Natural Language Processing:</strong> NLTK, SpaCy, Hugging Face Transformers</li>
+                <li><strong>Computer Vision:</strong> OpenCV, YOLO, MediaPipe</li>
+                <li><strong>Data Visualization:</strong> Plotly, D3.js, Tableau</li>
+            </ul>
+        </div>
+
+        <div class="industries">
+            <h2>Industries We Serve</h2>
+            <p>
+                Our AI solutions are tailored to various industries:
+            </p>
+            <ul>
+                <li><strong>Healthcare:</strong> AI-driven diagnostics, patient data analysis, predictive care</li>
+                <li><strong>Finance:</strong> Fraud detection, algorithmic trading, risk analysis</li>
+                <li><strong>Retail:</strong> Customer analytics, demand forecasting, personalization</li>
+                <li><strong>Manufacturing:</strong> Predictive maintenance, quality control, automation</li>
+                <li><strong>Education:</strong> Personalized learning, automated grading, performance tracking</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 ProBuddyHub. All rights reserved.</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/ai-solutions.js') }}"></script>
+</body>
+</html>
